@@ -8,7 +8,7 @@ using namespace std;
 
 
 int main() {
-  auto ret = Solution().isFlipedString("a", "a");
+  auto ret = Solution().isFlipedString("abcde", "bcdea");
 
   std::cout << "ret is " << ret << std::endl;
 }
