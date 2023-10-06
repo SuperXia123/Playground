@@ -14,7 +14,7 @@ public:
     }
 
     for (int i = 1; i < str1.size(); i++) {
-      auto flipped = FlipString(str1, i);
+      std::string flipped = FlipString(str1, i);
       if (flipped == str2) {
         return true;
       }
@@ -23,8 +23,8 @@ public:
     return false;
   }
 
-  bool isFlippedStringSolutionV2(
-    const std::string &str1, const std::string &str2) {
+  static bool isFlippedStringSolution(const std::string &str1,
+                                      const std::string &str2) {
     return (str1.size() == str2.size()) &&
            ((str1 + str1).find(str2) != std::string::npos);
   }
@@ -36,4 +36,3 @@ private:
     return flipped;
   }
 };
-
