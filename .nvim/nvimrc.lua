@@ -1,2 +1,2 @@
-require("dap-configurations")
-
+require("config-dap")
+require("config-runner")

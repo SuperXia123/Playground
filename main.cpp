@@ -2,13 +2,13 @@
 #include <iostream>
 #include <algorithm>
 
-#include "solutions/程序员面试金典/面试题01.09.字符串轮转.h"
+#include "solutions/程序员面试金典/面试题16.22.兰顿蚂蚁.h"
 
 using namespace std;
 
 
 int main() {
-  bool ret = Solution().isFlipedString("abcde", "bcdex");
+  Solution solution{};
 
-  std::cout << "ret is " << ret << std::endl;
+  solution.printKMoves(2);
 }
