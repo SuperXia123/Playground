@@ -11,3 +11,8 @@ void PrintVector(const std::vector<T> &vct) {
   }
   std::cout << "]" << std::endl;
 };
+
+template<typename T>
+void PrintValue(const T &val) {
+  std::cout << val << std::endl;
+};

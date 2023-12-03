@@ -1,21 +1,19 @@
-#include <vector>
-#include <iostream>
 #include <algorithm>
+#include <iostream>
+#include <vector>
 
+#include "solutions/程序员面试金典/面试题16.10.生存人数.h"
 #include "utils.h"
-#include "solutions/程序员面试金典/面试题16.24.数对和.h"
 
 using namespace std;
-
-
 
 int main() {
   Solution solution{};
 
-  std::vector<int> nums{2, 1, 8, 6, 5, 7, -1, 3, 5, 5};
+  std::vector<int> birth{1900, 1901, 1950};
+  std::vector<int> death{1948, 1951, 2000};
 
-  auto ret = solution.pairSums(nums, 7);
-  for (const auto &x : ret) {
-    PrintVector(x);
-  }
+  auto ret = solution.maxAliveYear(birth, death);
+
+  PrintValue(ret);
 }
