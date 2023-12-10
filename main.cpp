@@ -5,21 +5,21 @@
 #include <string>
 #include <vector>
 
-#include "solutions/程序员面试金典/面试题16.26.计算器.h"
+#include "solutions/程序员面试金典/面试题01.07.旋转矩阵.h"
 #include "utils.h"
 
 using namespace std;
 
 int main() {
   Solution solution{};
+std::vector<std::vector<int>> matrix {
+    {5, 1, 9, 11},
+    {2, 4, 8, 10},
+    {13, 3, 6, 7},
+    {15, 14, 12, 16},
+  };
 
-  // std::string str{" - 1 "};
-  // auto a1 = std::strtol(str.c_str(), nullptr, 10);
-  // auto a2 = std::stoi(str);
-  //
-  // std::cout << "a1 is " << a1 << ", a2 is " << a2 << "\n";
+  solution.rotate(matrix);
 
-  auto ret = solution.calculate("42");
-
-  PrintValue(ret);
+  PrintMatrix(matrix);
 }

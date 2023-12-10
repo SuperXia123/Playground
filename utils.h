@@ -9,10 +9,20 @@ void PrintVector(const std::vector<T> &vct) {
   for (const auto &x : vct) {
     std::cout << x << ", ";
   }
-  std::cout << "]" << std::endl;
+  std::cout << "]" << '\n';
 };
 
 template<typename T>
 void PrintValue(const T &val) {
   std::cout << val << std::endl;
+};
+
+
+template<typename T>
+void PrintMatrix(const std::vector<std::vector<T>> &matrix) {
+  std::cout << "[";
+  for (const auto &vct : matrix) {
+    PrintVector<T>(vct);
+  }
+  std::cout << "]" << '\n';
 };
