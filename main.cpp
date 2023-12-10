@@ -1,8 +1,11 @@
 #include <algorithm>
+#include <cstddef>
+#include <cstdlib>
 #include <iostream>
+#include <string>
 #include <vector>
 
-#include "solutions/程序员面试金典/面试题16.10.生存人数.h"
+#include "solutions/程序员面试金典/面试题16.26.计算器.h"
 #include "utils.h"
 
 using namespace std;
@@ -10,10 +13,13 @@ using namespace std;
 int main() {
   Solution solution{};
 
-  std::vector<int> birth{1900, 1901, 1950};
-  std::vector<int> death{1948, 1951, 2000};
+  // std::string str{" - 1 "};
+  // auto a1 = std::strtol(str.c_str(), nullptr, 10);
+  // auto a2 = std::stoi(str);
+  //
+  // std::cout << "a1 is " << a1 << ", a2 is " << a2 << "\n";
 
-  auto ret = solution.maxAliveYear(birth, death);
+  auto ret = solution.calculate("42");
 
   PrintValue(ret);
 }
