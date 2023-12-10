@@ -26,3 +26,9 @@ void PrintMatrix(const std::vector<std::vector<T>> &matrix) {
   }
   std::cout << "]" << '\n';
 };
+
+struct ListNode {
+  int val;
+  ListNode *next{};
+  ListNode(int x) : val(x) {}
+};
