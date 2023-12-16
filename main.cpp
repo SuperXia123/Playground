@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-#include "solutions/程序员面试金典/面试题16.20.T9键盘.h"
+#include "solutions/程序员面试金典/面试题16.04.井字游戏.h"
 #include "utils.h"
 
 using namespace std;
@@ -14,9 +14,8 @@ using namespace std;
 int main() {
   Solution solution{};
 
-  std::vector<std::string> words{"a", "b", "c", "d"};
-  std::string num {"2"};
+  std::vector<std::string> board{"OOX","XXO","OXO"};
 
-  auto ret = solution.getValidT9Words(num, words);
-  PrintVector(ret);
+  auto ret = solution.tictactoe(board);
+  PrintValue(ret);
 }
