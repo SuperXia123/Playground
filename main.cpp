@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-#include "solutions/程序员面试金典/面试题16.06.最小差.h"
+#include "solutions/程序员面试金典/面试题16.20.T9键盘.h"
 #include "utils.h"
 
 using namespace std;
@@ -14,9 +14,9 @@ using namespace std;
 int main() {
   Solution solution{};
 
-  std::vector<int> a{-2147483648,1};
-  std::vector<int> b{2147483647,0};
+  std::vector<std::string> words{"a", "b", "c", "d"};
+  std::string num {"2"};
 
-  auto ret = solution.smallestDifference(a, b);
-  PrintValue(ret);
+  auto ret = solution.getValidT9Words(num, words);
+  PrintVector(ret);
 }
