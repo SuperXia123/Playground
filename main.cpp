@@ -6,16 +6,15 @@
 #include <string>
 #include <vector>
 
-#include "solutions/程序员面试金典/面试题16.04.井字游戏.h"
+#include "solutions/程序员面试金典/面试题16.02.单词频率.h"
 #include "utils.h"
 
 using namespace std;
 
 int main() {
-  Solution solution{};
+  WordsFrequency word_frequency_ipl({"i", "have", "an", "apple", "he", "have", "a", "pen"});
 
-  std::vector<std::string> board{"OOX","XXO","OXO"};
 
-  auto ret = solution.tictactoe(board);
+  auto ret = word_frequency_ipl.get("pen");
   PrintValue(ret);
 }
