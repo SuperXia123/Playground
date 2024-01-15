@@ -6,15 +6,22 @@
 #include <string>
 #include <vector>
 
-#include "solutions/程序员面试金典/面试题16.02.单词频率.h"
+#include "solutions/程序员面试金典/面试题16.14.最佳直线.h"
 #include "utils.h"
 
 using namespace std;
 
 int main() {
-  WordsFrequency word_frequency_ipl({"i", "have", "an", "apple", "he", "have", "a", "pen"});
+  Solution solution;
 
+  std::vector<std::vector<int>> test_input{
+      {0, 0},
+      {1, 1},
+      {1, 0},
+      {2, 0},
+      {2, 2},
+  };
 
-  auto ret = word_frequency_ipl.get("pen");
-  PrintValue(ret);
+  auto ret = solution.bestLine(test_input);
+  PrintVector(ret);
 }
