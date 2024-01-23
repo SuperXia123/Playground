@@ -7,7 +7,7 @@
 #include <string>
 #include <vector>
 
-#include "solutions/程序员面试金典/面试题17.17.多次搜索.h"
+#include "solutions/程序员面试金典/面试题17.13.恢复空格.h"
 #include "utils.h"
 
 using namespace std;
@@ -15,11 +15,9 @@ using namespace std;
 int main() {
   Solution solution;
 
-  std::string big {"mississippi"};
-  std::vector<std::string> smalls {"","ppi","hi","sis","i","ssippi"};
+  std::vector<std::string> dictionary {"looked","just","like","her","brother"};
+  std::string sentence{""};
 
-  auto ret = solution.multiSearch(big, smalls);
-  for (const auto &term : ret) {
-    PrintVector(term);
-  }
+  auto ret = solution.respace(dictionary, sentence);
+  PrintValue(ret);
 }
