@@ -7,26 +7,26 @@
 #include <string>
 #include <vector>
 
-#include "solutions/程序员面试金典/面试题02.03.删除中间节点.h"
+#include "solutions/程序员面试金典/面试题03.01.三合一.h"
 #include "utils.h"
 
 using namespace std;
 
 int main() {
-  Solution solution;
-  std::vector<int> test_input{10, 9, 2, 5, 3, 7, 101, 18};
-  ListNode node1(10);
-  ListNode node2(8);
-  ListNode node3(4);
-  ListNode node4(3);
-  ListNode node5(7);
+  TripleInOne triple(18);
   
-  node1.next = &node2;
-  node2.next = &node3;
-  node3.next = &node4;
-  node4.next = &node5;
-
-  solution.deleteNode(&node2);
-
-  PrintListNode(&node1);
+  PrintValue(triple.peek(1));
+  PrintValue(triple.pop(2));
+  PrintValue(triple.isEmpty(1));
+  triple.push(2, 40);
+  PrintValue(triple.pop(2));
+  triple.push(0, 44);
+  triple.push(1, 40);
+  triple.push(1, 40);
+  triple.push(1, 40);
+  triple.push(1, 40);
+  triple.push(1, 40);
+  triple.push(1, 40);
+  PrintValue(triple.peek(1));
+  PrintValue(triple.pop(2));
 }
