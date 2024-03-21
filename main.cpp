@@ -7,7 +7,7 @@
 #include <string>
 #include <vector>
 
-#include "solutions/程序员面试金典/面试题02.02.返回倒数第k个节点.h"
+#include "solutions/程序员面试金典/面试题02.03.删除中间节点.h"
 #include "utils.h"
 
 using namespace std;
@@ -26,6 +26,7 @@ int main() {
   node3.next = &node4;
   node4.next = &node5;
 
-  auto ret = solution.kthToLast(&node1, 3);
-  PrintValue(ret);
+  solution.deleteNode(&node2);
+
+  PrintListNode(&node1);
 }

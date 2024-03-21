@@ -3,8 +3,7 @@
 #include <iostream>
 #include <vector>
 
-template<typename T>
-void PrintVector(const std::vector<T> &vct) {
+template <typename T> void PrintVector(const std::vector<T> &vct) {
   std::cout << "[";
   for (const auto &x : vct) {
     std::cout << x << ", ";
@@ -12,13 +11,11 @@ void PrintVector(const std::vector<T> &vct) {
   std::cout << "]" << '\n';
 };
 
-template<typename T>
-void PrintValue(const T &val) {
+template <typename T> void PrintValue(const T &val) {
   std::cout << val << std::endl;
 };
 
-
-template<typename T>
+template <typename T>
 void PrintMatrix(const std::vector<std::vector<T>> &matrix) {
   std::cout << "[";
   for (const auto &vct : matrix) {
@@ -32,3 +29,11 @@ struct ListNode {
   ListNode *next{};
   ListNode(int x) : val(x) {}
 };
+
+inline void PrintListNode(ListNode *node) {
+  while (node != nullptr) {
+    std::cout << node->val << ", ";
+    node = node->next;
+  }
+  std::cout << "\n";
+}
