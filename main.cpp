@@ -7,7 +7,7 @@
 #include <string>
 #include <vector>
 
-#include "solutions/程序员面试金典/面试题08.04.PowerSet.h"
+#include "solutions/程序员面试金典/面试题08.11.硬币.h"
 #include "utils.h"
 
 using namespace std;
@@ -16,8 +16,6 @@ int main() {
   std::vector<int> test_input{1, 2, 3};
 
   Solution solution;
-  auto ret = solution.subsets(test_input);
-  for (const auto &grid : ret) {
-    PrintVector(grid);
-  }
+  auto ret = solution.waysToChange(0);
+  PrintValue(ret);
 }
