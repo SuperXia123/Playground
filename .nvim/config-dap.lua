@@ -12,13 +12,13 @@ dap.configurations.cpp = {
 		stopOnEntry = false,
 		args = {},
 		-- runInTerminal = true,
-		-- setupCommands = {
-		-- 	{
-		-- 		descriptions = "enable pretty printing",
-		-- 		text = "-enable-pretty-printing",
-		-- 		ignoreFailsures = false,
-		-- 	},
-		-- },
+		setupCommands = {
+			{
+				descriptions = "enable pretty printing",
+				text = "-enable-pretty-printing",
+				ignoreFailsures = false,
+			},
+		},
 
 	},
 }
